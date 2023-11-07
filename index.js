@@ -33,6 +33,7 @@ app.get("/getSynonyms", (req, res) => {
     getCompletion(prompt, res);
 })
 
+//TAREA
 app.post("/getHtmlReport", (req, res) => {
     const report = req.body.content;
     console.log(report);
@@ -42,7 +43,10 @@ app.post("/getHtmlReport", (req, res) => {
         return;
     }
     
-    const prompt = `Use the json data array delimited by the tags <info></info> to generate a complete HTML file that contains a centered table showing all the results, return just the HTML. json: <info>${JSON.stringify(report)}</info>`;
+    const prompt = `Use the json data array delimited by the tags <info></info> 
+    to generate a complete HTML file that contains a table showing all 
+    the data, return just the HTML use inline css to improve the table and 
+    center it at the middle of the page. json: <info>${JSON.stringify(report)}</info>`;
     
     getReportCompletion(prompt, res);
 });
