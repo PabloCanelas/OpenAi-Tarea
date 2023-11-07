@@ -5,7 +5,8 @@ El endpoint(post /getHtmlReport) recibe un array en fomato json y retorna los da
 
 El archivo .env debe contener las variables port y api_key los cuales son el puerto en el que escuchara el servidor express y la llave de OpenAi Api.
 
-El ejemplo de un body para este endpoint es el siguiente y el resultado es el archipo Report.html en el repositorio:
+El ejemplo de un body para este endpoint es el siguiente y el resultado es el archio Report.html en el repositorio:
+
  {
      "content":[
       {
