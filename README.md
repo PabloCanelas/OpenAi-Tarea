@@ -1,9 +1,9 @@
 # OpenAi-Tarea
 Tarea de implementacion de un endpoint que utiliza la api de OpenAi para solicitar un prompt basado en el request del endpoint.
 
-El endpoint recibe un array en fomato json y retorna los datos en tabulados en html.
+El endpoint(post /getHtmlReport) recibe un array en fomato json y retorna los datos tabulados en html.
 
-El archivo .env debe contener la variable port y api_key los cuales son el puerto en el que escuchara el servidor express y la llave de OpenAi Api.
+El archivo .env debe contener las variables port y api_key los cuales son el puerto en el que escuchara el servidor express y la llave de OpenAi Api.
 
 El ejemplo de un body para este endpoint es el siguiente y el resultado es el archipo Report.html en el repositorio:
  {
